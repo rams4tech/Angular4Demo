@@ -29,7 +29,6 @@ export class HeroService {
         tap(heroes => this.log(`fetched heroes`)),
         catchError(this.handleError('getHeroes', []))
       );
-            
       this.log('finished ajax call');
 
       return response;
